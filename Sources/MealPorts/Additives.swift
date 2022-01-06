@@ -1,7 +1,7 @@
 import Foundation
 
-struct Additives: OptionSet {
-    let rawValue: Int
+public struct Additives: OptionSet {
+    public let rawValue: Int
 
     static let foodColoring    = Additives(rawValue: 1 << 0)
     static let preservatives = Additives(rawValue: 1 << 1)
@@ -20,5 +20,10 @@ struct Additives: OptionSet {
     static let milkProtein   = Additives(rawValue: 1 << 14)
 
     static let none: Additives = []
+    
+    public init(rawValue: Int) {
+        self.rawValue = rawValue
+    }
+
 }
 

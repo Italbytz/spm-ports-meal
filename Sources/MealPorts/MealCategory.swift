@@ -1,6 +1,6 @@
 import Foundation
 
-public enum Category {
+public enum MealCategory {
     case none
     case dessert
     case dish

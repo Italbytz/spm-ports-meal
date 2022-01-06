@@ -2,7 +2,7 @@ import Foundation
 
 import Foundation
 
-struct Allergens: OptionSet {
+public struct Allergens: OptionSet {
     let rawValue: Int
 
     static let gluten    = Allergens(rawValue: 1 << 0)
@@ -21,4 +21,9 @@ struct Allergens: OptionSet {
     static let mollusk   = Allergens(rawValue: 1 << 13)
 
     static let none: Allergens = []
+    
+    public init(rawValue: Int) {
+        self.rawValue = rawValue
+    }
+
 }
