@@ -6,6 +6,6 @@ public protocol Meal {
     var price: Price {get set}
     var allergens: Allergens {get set}
     var additives: Additives {get set}
-    var category: Category {get set}
+    var category: MealCategory {get set}
 }
 
