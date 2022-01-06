@@ -3,22 +3,22 @@ import Foundation
 import Foundation
 
 public struct Allergens: OptionSet {
-    let rawValue: Int
+    public let rawValue: Int
 
-    static let gluten    = Allergens(rawValue: 1 << 0)
-    static let shellfish  = Allergens(rawValue: 1 << 1)
-    static let eggs   = Allergens(rawValue: 1 << 2)
-    static let fish   = Allergens(rawValue: 1 << 3)
-    static let peanuts    = Allergens(rawValue: 1 << 4)
-    static let soy  = Allergens(rawValue: 1 << 5)
-    static let milk   = Allergens(rawValue: 1 << 6)
-    static let nuts   = Allergens(rawValue: 1 << 7)
-    static let celery    = Allergens(rawValue: 1 << 8)
-    static let mustard  = Allergens(rawValue: 1 << 9)
-    static let sesame   = Allergens(rawValue: 1 << 10)
-    static let sulfur   = Allergens(rawValue: 1 << 11)
-    static let lupine   = Allergens(rawValue: 1 << 12)
-    static let mollusk   = Allergens(rawValue: 1 << 13)
+    public static let gluten    = Allergens(rawValue: 1 << 0)
+    public static let shellfish  = Allergens(rawValue: 1 << 1)
+    public static let eggs   = Allergens(rawValue: 1 << 2)
+    public static let fish   = Allergens(rawValue: 1 << 3)
+    public static let peanuts    = Allergens(rawValue: 1 << 4)
+    public static let soy  = Allergens(rawValue: 1 << 5)
+    public static let milk   = Allergens(rawValue: 1 << 6)
+    public static let nuts   = Allergens(rawValue: 1 << 7)
+    public static let celery    = Allergens(rawValue: 1 << 8)
+    public static let mustard  = Allergens(rawValue: 1 << 9)
+    public static let sesame   = Allergens(rawValue: 1 << 10)
+    public static let sulfur   = Allergens(rawValue: 1 << 11)
+    public static let lupine   = Allergens(rawValue: 1 << 12)
+    public static let mollusk   = Allergens(rawValue: 1 << 13)
 
     static let none: Allergens = []
     
