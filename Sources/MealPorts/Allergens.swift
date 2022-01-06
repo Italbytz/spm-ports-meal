@@ -20,7 +20,7 @@ public struct Allergens: OptionSet {
     public static let lupine   = Allergens(rawValue: 1 << 12)
     public static let mollusk   = Allergens(rawValue: 1 << 13)
 
-    static let none: Allergens = []
+    public static let none: Allergens = []
     
     public init(rawValue: Int) {
         self.rawValue = rawValue
