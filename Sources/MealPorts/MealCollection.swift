@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol MealCollection {
-    var name : String { get set}
+    var category : MealCategory { get set}
     var meals : [Meal] {get set}
 }
 
